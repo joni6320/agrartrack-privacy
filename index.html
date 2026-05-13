@@ -19,9 +19,39 @@
         ul { padding-left: 1.4rem; }
         a { color: #2563eb; }
         .updated { color: #666; font-size: 0.88rem; margin-bottom: 2rem; }
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .lang-btn {
+            padding: 4px 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f5f5f5;
+            cursor: pointer;
+            font-size: 0.88rem;
+            font-family: inherit;
+        }
+        .lang-btn.active {
+            background: #2563eb;
+            color: #fff;
+            border-color: #2563eb;
+        }
+        .lang-section { display: none; }
+        .lang-section.visible { display: block; }
     </style>
 </head>
 <body>
+
+<div class="lang-switcher">
+    <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- DEUTSCH -->
+<div class="lang-section visible" id="lang-de">
 
 <h1>Datenschutzerklärung</h1>
 <p class="updated">Zuletzt aktualisiert: Mai 2026</p>
@@ -112,6 +142,113 @@
 
 <h2>10. Kontakt</h2>
 <p>Bei Fragen zum Datenschutz: <a href="mailto:steinbauer.feedback@gmail.com">steinbauer.feedback@gmail.com</a></p>
+
+</div>
+
+<!-- ENGLISH -->
+<div class="lang-section" id="lang-en">
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: May 2026</p>
+
+<p>This Privacy Policy applies to the Android app <strong>AgrarTrack</strong> (hereinafter "App").</p>
+
+<h2>1. Data Controller</h2>
+<p>
+    Daniel Ziegerhofer<br>
+    Bergviertel 8<br>
+    8190 Miesenbach bei Birkfeld<br>
+    Styria, Austria<br>
+    Email: <a href="mailto:steinbauer.feedback@gmail.com">steinbauer.feedback@gmail.com</a>
+</p>
+
+<h2>2. Data We Process</h2>
+<p>The following personal data is processed when using the App:</p>
+<ul>
+    <li><strong>Google account data:</strong> Name and email address transmitted when signing in with Google.</li>
+    <li><strong>Operational data:</strong> Data you enter such as jobs, customers, fields, drivers, and service types.</li>
+    <li><strong>Organisation data:</strong> Name and members of organisations you create or join.</li>
+    <li><strong>Last activity timestamp:</strong> The date and time of your last app use is stored on the server. This data is intended for a planned feature to display activity status within an organisation and is currently not shared with other users.</li>
+</ul>
+<p>No location data, device identifiers, advertising data, or usage statistics are collected.</p>
+
+<h2>3. Purpose and Legal Basis</h2>
+<p>Data processing is carried out solely for the purpose of providing the App's features (recording and managing agricultural jobs and resources).</p>
+<p>The legal basis is Art. 6(1)(b) GDPR (performance of a contract or pre-contractual measures).</p>
+
+<h2>4. Data Storage</h2>
+<p>Data is stored in two places:</p>
+<ul>
+    <li><strong>Locally on your device:</strong> The App stores data offline in a local database on your smartphone.</li>
+    <li><strong>On our server:</strong> To synchronise data between devices and members of an organisation, data is stored on a server in the EU (Frankfurt, Germany).</li>
+</ul>
+
+<h2>5. Third-Party Disclosure / Data Processors</h2>
+<p>We do not share your data with third parties. The following service providers are engaged as data processors:</p>
+<ul>
+    <li>
+        <strong>Google LLC</strong> (USA) – for authentication via Google Sign-In.<br>
+        Google is certified under the EU–US Data Privacy Framework.
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+    </li>
+    <li>
+        <strong>Cloudflare, Inc.</strong> (USA) – as API gateway between App and server.
+        Processing is based on EU Standard Contractual Clauses (Art. 46 GDPR).
+        <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</a>
+    </li>
+    <li>
+        <strong>Neon, Inc.</strong> – database provider. Data is stored exclusively on servers in Frankfurt, Germany.
+        <a href="https://neon.tech/privacy-policy" target="_blank">Neon Privacy Policy</a>
+    </li>
+</ul>
+
+<h2>6. Data Security</h2>
+<p>We take appropriate technical and organisational measures to protect your data:</p>
+<ul>
+    <li>All data transfers between the App and the server are encrypted (HTTPS/TLS).</li>
+    <li>We use only established, GDPR-compliant service providers with whom data processing agreements pursuant to Art. 28 GDPR are in place.</li>
+    <li>Database servers are located exclusively in the EU (Frankfurt, Germany).</li>
+    <li>In the event of a data breach, affected users and the competent supervisory authority will be notified without undue delay, and at the latest within 72 hours, in accordance with Art. 33 and 34 GDPR.</li>
+</ul>
+<p>Despite these measures, absolute security of data transmission over the internet cannot be guaranteed. The service providers we use maintain their own security programmes; their measures are described in their respective privacy policies.</p>
+
+<h2>7. Retention Period</h2>
+<p>Data is stored for as long as you use the App and your account is active. After deletion of your account, all your personal data will be deleted from our servers within 30 days. Local data on your device can be removed at any time by uninstalling the App.</p>
+
+<h2>8. Your Rights (GDPR)</h2>
+<p>You have the following rights regarding your personal data:</p>
+<ul>
+    <li><strong>Access</strong> (Art. 15 GDPR): You may request information about the data we store about you at any time.</li>
+    <li><strong>Rectification</strong> (Art. 16 GDPR): You may request the correction of inaccurate data.</li>
+    <li><strong>Erasure</strong> (Art. 17 GDPR): You may request the deletion of your data.</li>
+    <li><strong>Restriction of processing</strong> (Art. 18 GDPR)</li>
+    <li><strong>Data portability</strong> (Art. 20 GDPR)</li>
+    <li><strong>Objection</strong> (Art. 21 GDPR)</li>
+</ul>
+<p>To exercise your rights, please contact: <a href="mailto:steinbauer.feedback@gmail.com">steinbauer.feedback@gmail.com</a></p>
+
+<h2>9. Right to Lodge a Complaint</h2>
+<p>You have the right to lodge a complaint with the Austrian Data Protection Authority:</p>
+<p>
+    Austrian Data Protection Authority (Datenschutzbehörde)<br>
+    Barichgasse 40–42, 1030 Vienna, Austria<br>
+    <a href="https://www.dsb.gv.at" target="_blank">www.dsb.gv.at</a>
+</p>
+
+<h2>10. Contact</h2>
+<p>For questions regarding data protection: <a href="mailto:steinbauer.feedback@gmail.com">steinbauer.feedback@gmail.com</a></p>
+
+</div>
+
+<script>
+    function setLang(lang) {
+        document.getElementById('lang-de').classList.toggle('visible', lang === 'de');
+        document.getElementById('lang-en').classList.toggle('visible', lang === 'en');
+        document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.documentElement.lang = lang;
+    }
+</script>
 
 </body>
 </html>
