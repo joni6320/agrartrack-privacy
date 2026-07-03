@@ -36,7 +36,7 @@
   <!-- ============================== DEUTSCH ============================== -->
   <section id="de">
     <h1>Datenschutzerklärung – AgrarTrack</h1>
-    <p class="muted"><strong>Stand:</strong> Mai 2026</p>
+    <p class="muted"><strong>Stand:</strong> Juli 2026</p>
 
     <div class="card">
       <strong>Verantwortlicher</strong><br />
@@ -59,13 +59,17 @@
           Dienstleistungen, erfasste Mengen, Zeiten, Preise und Kommentare.</li>
       <li><strong>Organisationsdaten</strong>: Name der Organisation und deren Mitglieder.</li>
       <li><strong>Kauf- bzw. Abonnementstatus</strong>: ob du eine kostenpflichtige Version (Pro/Business)
-          oder ein Abonnement besitzt. Die Zahlungsabwicklung erfolgt ausschließlich über Google Play;
+          oder ein Abonnement besitzt. Die Zahlungsabwicklung erfolgt je nach Plattform ausschließlich über
+          Google Play Billing (Android) bzw. den Apple App Store / StoreKit (iOS);
           wir erhalten <em>keine</em> Kreditkarten- oder Bankdaten.</li>
-      <li><strong>Standortdaten (optional)</strong>: Nur wenn du die optionalen Funktionen „GPS-Feld" bzw.
-          die Kartenansicht nutzt, verarbeiten wir die geografischen Koordinaten (Längen-/Breitengrad)
-          eines Feldes oder Standorts, die du bewusst erfasst. Es findet <em>kein</em> Hintergrund-Tracking
-          und keine laufende Standortaufzeichnung statt. Diese Funktionen sind nicht in allen App-Versionen
-          aktiviert.</li>
+      <li><strong>Standortdaten (optional)</strong>: Nutzt du die optionalen GPS-Funktionen (GPS-Feld,
+          Kartenansicht oder den GPS-Fuhrenzähler), verarbeiten wir geografische Koordinaten
+          (Längen-/Breitengrad). Der GPS-Fuhrenzähler ist eine kostenpflichtige Funktion, die du bewusst
+          startest: Solange er läuft, erfasst die App deinen Standort auch im Hintergrund und bei gesperrtem
+          Bildschirm, um Transportfahrten („Fuhren") automatisch per Geofencing zu zählen. Die
+          Standortverarbeitung findet ausschließlich bei aktiv gestartetem Zähler statt und endet, sobald du
+          ihn beendest. Außerhalb einer von dir gestarteten Sitzung gibt es <em>kein</em> dauerhaftes Tracking;
+          Standortdaten werden nicht für Werbung genutzt und nicht an Dritte weitergegeben.</li>
       <li><strong>Zeitstempel</strong> der letzten Aktivität zur Synchronisation.</li>
     </ul>
     <p>Wir erheben <strong>keine</strong> Werbe-IDs, betreiben <strong>kein</strong> Tracking zu Werbezwecken
@@ -78,8 +82,10 @@
        (<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">wiki.osmfoundation.org/wiki/Privacy_Policy</a>).</p>
 
     <h2>4. In-App-Käufe / Abonnements</h2>
-    <p>Kostenpflichtige Funktionen und Abonnements werden über <strong>Google Play Billing</strong> abgewickelt.
-       Die Zahlung und Verwaltung erfolgt durch Google; AgrarTrack speichert lediglich den daraus abgeleiteten
+    <p>Kostenpflichtige Funktionen und Abonnements werden je nach Plattform über
+       <strong>Google Play Billing</strong> (Android) bzw. den <strong>Apple App Store / StoreKit</strong> (iOS)
+       abgewickelt. Zahlung und Verwaltung erfolgen durch Google bzw. Apple; AgrarTrack erhält keine
+       Kreditkarten- oder Bankdaten und speichert lediglich den daraus abgeleiteten
        Berechtigungs-/Abonnementstatus, um die freigeschalteten Funktionen bereitzustellen.</p>
 
     <h2>5. Speicherung &amp; Speicherort</h2>
@@ -91,7 +97,8 @@
 
     <h2>6. Auftragsverarbeiter / Dienste Dritter</h2>
     <ul>
-      <li><strong>Google LLC</strong> (USA) – Google Sign-In (Anmeldung) und Google Play Billing (Käufe).</li>
+      <li><strong>Google LLC</strong> (USA) – Google Sign-In (Anmeldung) und Google Play Billing (Käufe auf Android).</li>
+      <li><strong>Apple Inc.</strong> (USA) – Apple App Store / StoreKit (Käufe und Abonnements auf iOS).</li>
       <li><strong>Cloudflare, Inc.</strong> (USA) – API-Gateway / Übertragung der Synchronisationsdaten.</li>
       <li><strong>Neon, Inc.</strong> – Datenbankbetreiber (Speicherort Frankfurt, EU).</li>
       <li><strong>OpenStreetMap Foundation</strong> (Vereinigtes Königreich) – Kartenkacheln (nur bei Nutzung der Karte).</li>
@@ -121,7 +128,7 @@
   <!-- ============================== ENGLISH ============================== -->
   <section id="en">
     <h1>Privacy Policy – AgrarTrack</h1>
-    <p class="muted"><strong>Last updated:</strong> May 2026</p>
+    <p class="muted"><strong>Last updated:</strong> July 2026</p>
 
     <div class="card">
       <strong>Data Controller</strong><br />
@@ -143,12 +150,17 @@
           recorded quantities, times, prices and comments.</li>
       <li><strong>Organisation details</strong>: organisation name and its members.</li>
       <li><strong>Purchase / subscription status</strong>: whether you own a paid version (Pro/Business) or a
-          subscription. All payments are processed exclusively via Google Play; we do <em>not</em> receive any
+          subscription. Depending on the platform, all payments are processed exclusively via Google Play
+          Billing (Android) or the Apple App Store / StoreKit (iOS); we do <em>not</em> receive any
           credit card or bank details.</li>
-      <li><strong>Location data (optional)</strong>: only if you use the optional "GPS field" feature or the map
-          view do we process the geographic coordinates (latitude/longitude) of a field or location that you
-          deliberately capture. There is <em>no</em> background tracking and no continuous location recording.
-          These features are not enabled in all versions of the app.</li>
+      <li><strong>Location data (optional)</strong>: if you use the optional GPS features (GPS field, map view,
+          or the GPS trip counter "GPS-Fuhrenzähler"), we process geographic coordinates (latitude/longitude).
+          The GPS trip counter is a paid feature that you deliberately start: while it is running, the app
+          records your location also in the background and with the screen locked, in order to automatically
+          count transport trips via geofencing. Location processing only takes place while you have actively
+          started the counter and ends as soon as you stop it. There is <em>no</em> persistent tracking outside
+          a session you started; location data is not used for advertising and is not shared with third
+          parties.</li>
       <li><strong>Timestamp</strong> of last activity for synchronisation.</li>
     </ul>
     <p>We do <strong>not</strong> collect advertising IDs, perform <strong>no</strong> advertising tracking and
@@ -161,9 +173,11 @@
        (<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">wiki.osmfoundation.org/wiki/Privacy_Policy</a>).</p>
 
     <h2>4. In-app purchases / subscriptions</h2>
-    <p>Paid features and subscriptions are processed via <strong>Google Play Billing</strong>. Payment and
-       management are handled by Google; AgrarTrack only stores the resulting entitlement/subscription status in
-       order to unlock the corresponding features.</p>
+    <p>Paid features and subscriptions are processed, depending on the platform, via
+       <strong>Google Play Billing</strong> (Android) or the <strong>Apple App Store / StoreKit</strong> (iOS).
+       Payment and management are handled by Google or Apple respectively; AgrarTrack does not receive any
+       credit card or bank details and only stores the resulting entitlement/subscription status in order to
+       unlock the corresponding features.</p>
 
     <h2>5. Storage &amp; location of data</h2>
     <ul>
@@ -173,7 +187,8 @@
 
     <h2>6. Data processors / third-party services</h2>
     <ul>
-      <li><strong>Google LLC</strong> (USA) – Google Sign-In (authentication) and Google Play Billing (purchases).</li>
+      <li><strong>Google LLC</strong> (USA) – Google Sign-In (authentication) and Google Play Billing (purchases on Android).</li>
+      <li><strong>Apple Inc.</strong> (USA) – Apple App Store / StoreKit (purchases and subscriptions on iOS).</li>
       <li><strong>Cloudflare, Inc.</strong> (USA) – API gateway / transmission of synchronisation data.</li>
       <li><strong>Neon, Inc.</strong> – database provider (storage location Frankfurt, EU).</li>
       <li><strong>OpenStreetMap Foundation</strong> (United Kingdom) – map tiles (only when using the map).</li>
